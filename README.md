@@ -7,18 +7,20 @@ This repository contains the code for the analysis reported in [New Journal of P
 <image src='featured.png' />
 
 
+### Disclaimer 
+
 Please note that this repository is not intended for wide-spread distribution. We are only making the code available so that other researchers may reproduce the results published in our manuscript. 
 
 ### Directory Structure ###
 
-* python -- for python modules/functions
-* matlab -- code to generate samples 
-* notebooks -- contain the notebook to generate the figures
-* data -- for datasets that might be helpful to add to repo
-* samples -- contain the data to generate the networks 
+* [python](/python) -- for python modules/functions
+* [matlab](/matlab) -- code to generate samples 
+* [notebooks](/notebooks) -- contain the notebook to generate the figures
+* [data](/data) -- real networks data
+* [samples](/samples) -- store network ensembles
+* [scripts](/scripts) -- python code to run on terminal 
 
-
-## Installation
+## How to use
 
 ```bash
 $conda create -n anomaly

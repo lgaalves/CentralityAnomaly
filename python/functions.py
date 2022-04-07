@@ -201,7 +201,7 @@ def plot_network(Network,df_real,dfnames):
     if Network=='AIR':
         df_coord=labels_data(Network)
 
-        list_of_airports=pd.read_csv("../data_kaggle/airports-extended.csv",
+        list_of_airports=pd.read_csv("../data/airports-extended.csv",
                                      names=["id","airport.name",'city.name','country.name','IATA','ICAO','lat','long','altitude','tz.offset','DST','tz.name','airport.type','source.data'])
 
         list_of_airports=list_of_airports[['city.name','country.name','ICAO','lat','long']]
@@ -330,14 +330,14 @@ def read_samples(net,number_of_samples=1):
     """
     sample=[]
     for i in range(1,number_of_samples+1):
-        df=pd.read_csv('../samples/Networks/{}/random_{}.txt'.format(net,i),sep=' ',names=['Source','Target','Weight'],index_col=None)
+        df=pd.read_csv('../samples/{}/random_{}.txt'.format(net,i),sep=' ',names=['Source','Target','Weight'],index_col=None)
         df.Source=df.Source.astype(int)-1
         df.Target=df.Target.astype(int)-1
         sample.append(df)
     return sample
 
 def read_real_data(net):
-    df=pd.read_csv('../samples/network_{}.txt'.format(net),sep=' ',header=0,index_col=None)
+    df=pd.read_csv('../data/network_{}.txt'.format(net),sep=' ',header=0,index_col=None)
     df.Source=df.Source.astype(int)-1
     df.Target=df.Target.astype(int)-1
     return df 
@@ -413,24 +413,24 @@ def calculate():
 def labels_data(option):
     labels=dict()
     
-    dfnames=pd.read_csv('../samples/nodes_label_AIR_weight.txt',sep=' ')
+    dfnames=pd.read_csv('../data/nodes_label_AIR_weight.txt',sep=' ')
     dfnames.name=dfnames.name.str.upper()
     dfnames.rename(columns={'name':'city'},inplace=True)
     labels['AIR']=dfnames
     
-    dfnames=pd.read_csv('../samples/nodes_label_BR_Pop.txt',sep=' ')
+    dfnames=pd.read_csv('../data/nodes_label_BR_Pop.txt',sep=' ')
     dfnames.Name=dfnames.Name.str.upper()
     dfnames.rename(columns={'Name':'city'},inplace=True)
     labels['BR']=dfnames
     
-    dfnames=pd.read_csv('../samples/nodes_label_ES_Pop.txt',sep=' ')
+    dfnames=pd.read_csv('../data/nodes_label_ES_Pop.txt',sep=' ')
     dfnames.rename(columns={'Name':'city'},inplace=True)
     dfnames.city=dfnames.city.str.upper()
     dfnames.city=dfnames.city.str.replace('|',', ') 
     labels['ES']=dfnames
     
     
-    dfnames=pd.read_csv('../samples/nodes_label_UK_Pop.txt',sep=' ')
+    dfnames=pd.read_csv('../data/nodes_label_UK_Pop.txt',sep=' ')
     dfnames.city=dfnames.city.str.upper()
     dfnames.head()
     labels['UK']=dfnames
@@ -442,7 +442,7 @@ def load_data_real(Network='AIR'):
     dfnames=labels_data(Network)
     
     if Network=='AIR':
-        list_of_airports=pd.read_csv("../data_kaggle/airports-extended.csv",
+        list_of_airports=pd.read_csv("../data/airports-extended.csv",
                                      names=["id","airport.name",'city.name','country.name','IATA','ICAO','lat','long','altitude','tz.offset','DST','tz.name','airport.type','source.data'])
 
         list_of_airports=list_of_airports[['city.name','country.name','ICAO','lat','long']]
