@@ -20,7 +20,6 @@ Generating ensemble using the matlab script:
 
 ```
 MATLAB >> SaveSpatialModelSamples('network_name.txt',1000) 
-
 ```
 
 Then, run  `model_betweenness.py` to compute the degree, strength, and betweeness of each sample of the ensemble and ` model_anomaly_fraction.py` computes the fraction of anomalies. 
