@@ -1,0 +1,30 @@
+# # Ignore everything
+# *
+
+# # Don't ignore directories, so we can recurse into them
+# !*/
+
+# Don't ignore .gitignore
+!.gitignore
+!.ipynb
+!.py
+
+# # Now exclude our type
+.ipynb_checkpoints
+# .tmp
+# .pdf
+# .pyc
+# .deps
+__pycache__
+.DS_Store
+
+samples/AIR/*.txt	
+samples/AIR_agg_weight/*.txt	
+samples/BR/*.txt		
+samples/ES/*.txt		
+samples/UK/*.txt
+samples/AIR_agg/*.txt		
+samples/AIR_weight/*.txt	
+samples/BR_weight/*.txt	
+samples/ES_weight/*.txt	
+samples/UK_weight/*.txt
