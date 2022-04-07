@@ -9,7 +9,7 @@ import numpy as np
 def read_samples(net,number_of_samples=1):
     sample=[]
     for i in range(1,number_of_samples+1):
-        df=pd.read_csv('../samples/Networks/{}/random_{}.txt'.format(net,i),sep=' ',
+        df=pd.read_csv('../samples/{}/random_{}.txt'.format(net,i),sep=' ',
             names=['Source','Target','Weight'],index_col=None)
         df.Source=df.Source.astype(int)-1
         df.Target=df.Target.astype(int)-1
@@ -17,7 +17,7 @@ def read_samples(net,number_of_samples=1):
     return sample
 
 def read_real_data(net):
-    df=pd.read_csv('../samples/network_{}.txt'.format(net),sep=' ',header=0,index_col=None)
+    df=pd.read_csv('../data/network_{}.txt'.format(net),sep=' ',header=0,index_col=None)
     df.Source=df.Source.astype(int)-1
     df.Target=df.Target.astype(int)-1
     return df 

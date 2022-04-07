@@ -1,8 +1,8 @@
 # Unbiased sampling of network ensembles
 
-Code from paper by Tiziano Squartini, Rossana Mastrandrea, and Diego Garlaschelli (2015), Unbiased sampling of network ensembles. New J. Phys. 17 023052. 
+Code adapted from paper by Tiziano Squartini, Rossana Mastrandrea, and Diego Garlaschelli (2015), Unbiased sampling of network ensembles. New J. Phys. 17 023052. 
 
-The package was originally published by here: [A Matlab package to randomize and sample networks by a max-entropy approach for several null models
+The original package was originally published by here: [A Matlab package to randomize and sample networks by a max-entropy approach for several null models
 ](https://www.mathworks.com/matlabcentral/fileexchange/46912-max-sam-package-zip)
 
 # References

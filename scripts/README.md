@@ -16,7 +16,14 @@ $ python model_network.py
  `../spatial_model/{}_{}_{}_{}_{}_{}.txt` -  contains the degree and strength sequences to be used to generate the ensemble. 
 
 
-After generating ensemble using the matlab script, `model_betweenness.py` computes the degree, strength, and betweeness of each sample of the ensemble and ` model_anomaly_fraction.py` computes the fraction of anomalies. 
+After generating ensemble using the matlab script:
+
+```
+MATLAB >> SaveSpatialModelSamples('network_name.txt',1000) 
+
+```
+
+, `model_betweenness.py` computes the degree, strength, and betweeness of each sample of the ensemble and ` model_anomaly_fraction.py` computes the fraction of anomalies. 
 ```bash
 $ conda activate anomaly 
 $ python model_betweenness.py
