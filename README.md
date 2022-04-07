@@ -31,6 +31,12 @@ $conda install python=3.6 networkx=2.4 matplotlib=3.0.3 pandas cartopy geopandas
 $pip install watermark
 ```
 
+See further explanations here:
+
+* [Generate the ensembles](/matlab/README.md)
+* [Generate SDPASS model data](/scripts/README.md)
+* [Generate the figures](/notebooks/anomaly.ipynb)
+
 # Reference
 
 Luiz G. A. Alves, Alberto Aleta, Francisco A. Rodrigues, Yamir Moreno, Luís A. N. Amaral, Centrality anomalies in complex networks as a result of model over-simplification. [New Journal of Physics 23, 013043](https://lgaalves.github.io/publications/2020-njp-anomaly-detection.pdf)
