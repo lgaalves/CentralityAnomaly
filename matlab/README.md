@@ -27,7 +27,7 @@ MATLAB >> for i=1:num
 ### Undirected Enhanced Configuration Model (UECM)
 
 ```
-MATLAB >> pairks=load(strcat('network_degree_sequence.txt')))
+MATLAB >> pairks=load(strcat('network_degree_and_strenght_sequence.txt')))
 MATLAB >> outputs = MAXandSAM('UECM',[],pairks,[],10^(-6),0);
 MATLAB >> path = '/path_to_samples_folder/network_name-'
 MATLAB >> for i=1:num
