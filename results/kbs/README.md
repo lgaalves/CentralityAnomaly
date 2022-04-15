@@ -1,1 +1,1 @@
-# Degree, strenght, and centrality results are saved here
+# Degree, strengh, and centrality results are saved here

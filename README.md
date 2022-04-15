@@ -13,12 +13,15 @@ Please note that this repository is not intended for wide-spread distribution. W
 
 ### Directory Structure ###
 
-* [python](/python) -- for python modules/functions
+* [data](/data) -- real networks data
+* [figures/raw_figures](/figures/raw_figures) -- folder to save 
 * [matlab](/matlab) -- code to generate samples 
 * [notebooks](/notebooks) -- contain the notebook to generate the figures
-* [data](/data) -- real networks data
+* [python](/python) -- for python modules/functions
+* [results/kbs](/results/kbs) -- folder to save degree, strengh, and betweenness centrality
 * [samples](/samples) -- store network ensembles
 * [scripts](/scripts) -- python code to run on terminal 
+* [spatial_model](/spatial_model) -- folder with results for spatial model
 
 ## How to use
 
