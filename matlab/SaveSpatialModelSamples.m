@@ -1,5 +1,5 @@
 function SaveSpatialModelSamples(net_label,num)    
-pairks=load(strcat('../spatial_model/',strcat(net_label,'.txt')))
+pairks=load(strcat('../spatial_model/',strcat(net_label,'.txt')));
 outputs = MAXandSAM('UECM',[],pairks,[],10^(-6),0);
 length(outputs)
 write_files(outputs,'UECM',net_label,num);
