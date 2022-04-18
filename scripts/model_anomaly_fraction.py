@@ -63,10 +63,10 @@ def find_nodes_outside_the_p_bound(k,b,k_sample,b_sample,p=0.95):
 
 def main():
     init_nodes = 5
-    final_nodes = 1000
+    final_nodes = 100
     m = 4
     w0=1
-    n_samples=10000
+    n_samples=1000
     nodes=[i for i in range(1,final_nodes)]
     
     results_ubcm=[]

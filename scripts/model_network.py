@@ -316,7 +316,7 @@ def SDPASS(N, M0, m, L, rc, w0, delta):
 
 def main():
     init_nodes = 5
-    final_nodes = 1000
+    final_nodes = 100
     m = 4
     w0=1
     rc=0.1

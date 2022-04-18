@@ -38,10 +38,10 @@ def calculate_kbs_samples(method,file,nodes,n_samples):
 
 def main():
     init_nodes = 5
-    final_nodes = 1000
+    final_nodes = 100
     m = 4
     w0=1
-    n_samples=10000
+    n_samples=1000
     nodes=[i for i in range(1,final_nodes)]
     for rc in [0.01,1,10]:
         for delta in [0.01,1,10]:
